@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="9" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="60" vgap="20">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="791" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+      <foreground color="-15395563"/>
+    </properties>
+    <border type="line"/>
+    <children>
+      <component id="1ea38" class="javax.swing.JButton" binding="inputBut">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9127425"/>
+          <foreground color="-14606047"/>
+          <text value="Vælg input fil"/>
+        </properties>
+      </component>
+      <component id="6dfd4" class="javax.swing.JLabel" binding="chooseOutputL">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Folder"/>
+        </properties>
+      </component>
+      <component id="438af" class="javax.swing.JButton" binding="outputBut">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-9127425"/>
+          <foreground color="-14606047"/>
+          <text value="Vælg output mappe"/>
+        </properties>
+      </component>
+      <component id="755f" class="javax.swing.JLabel" binding="chooseFileL">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=".txt"/>
+        </properties>
+      </component>
+      <vspacer id="50852">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="40"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="17a55">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="40"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="3e5">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="76155">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="60" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="94a03" class="javax.swing.JLabel" binding="inputDistL">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" "/>
+        </properties>
+      </component>
+      <component id="4bc5" class="javax.swing.JLabel" binding="outputDistL">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" "/>
+        </properties>
+      </component>
+      <hspacer id="a45e2">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="230" height="-1"/>
+            <maximum-size width="230" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="123b">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="230" height="-1"/>
+            <maximum-size width="230" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="524ee" class="javax.swing.JButton" binding="runBut">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-35211"/>
+          <enabled value="false"/>
+          <foreground color="-14606047"/>
+          <text value="  "/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <vspacer id="82608">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="15"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="3c57e" class="javax.swing.JLabel" binding="runMessage">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="  "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

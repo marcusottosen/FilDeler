@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ProMarkFilOpdeler:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProMarkFilOpdeler_jar</output-path>
+    <root id="archive" name="ProMarkFilOpdeler.jar">
+      <element id="module-output" name="ProMarkFilOpdeler" />
+    </root>
+  </artifact>
+</component>
