@@ -43,11 +43,12 @@ public class FileRead  {
         System.out.println("Inddelinger i alt: " + (deleteHits+deleteAllHits));
         System.out.println("Der fjernes: " + ((deleteHits+deleteAllHits)-importHits));
         System.out.println("Efter fjernelse af DELETE og tomme inddelinger / antal filer der laves: " + importHits);
-        //System.out.println(delArr);
-        //System.out.println(impArr);
-        //System.out.println(delRemoveArr);
+        System.out.println("delArr: " + delArr);
+        System.out.println("impArr: " + impArr);
+        System.out.println("delRemoveArr: " + delRemoveArr);
     }
 
+    // Hvis DELETEALL, DELETE eller IMPORT findes i linjen, tilføj linjens nummer i arrays.
     public void makeHitArrays(){
         int hits=0;
         for (int j = 0; j < numberOfLines; j++) {
@@ -60,7 +61,7 @@ public class FileRead  {
                 }
                 else if ("DELETE".equals(word)){
                     delArr.add(j);
-                    delRemoveArr.add(hits);
+                    delRemoveArr.add(hits); //hits svarer til det index på delArr+1 og impArr som skal fjernes.
                     deleteHits++;
                 }
                 else if ("IMPORT".equals(word)) {
@@ -72,7 +73,7 @@ public class FileRead  {
         }
     }
 
-    public void removeDelIndex(){
+    public void removeDelIndex(){   //Fjerner alle index' der starter på DELETE
         for (int i = delRemoveArr.size()-1; i >= 0 ; i--) {
             int index = delRemoveArr.get(i);
             delArr.remove(index);
@@ -81,7 +82,7 @@ public class FileRead  {
         }
     }
 
-    public void removeEmptyIndex(){
+    public void removeEmptyIndex(){ //Fjerner alle tommer index'
         int size = impArr.size()-1;
         try {
             for (int i = size; i >= 1; i--) {
@@ -99,3 +100,5 @@ public class FileRead  {
         }
     }
 }
+
+//programmet tilføger alt fra DELETEALL/IMPORT til den næsten DELETEALL

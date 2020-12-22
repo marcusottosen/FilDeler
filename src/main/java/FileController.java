@@ -30,10 +30,10 @@ public class FileController{
 
     public void writeFile() throws IOException {
         FileWrite[] myName = new FileWrite[impArr.size()];
-        delArr.add(delArr.size()+1);        //Tilføjer ekstra index på delArr for at undgå outOfBounds.
-        for (int fileCount = 0; fileCount < impArr.size() ; fileCount++) {
+        delArr.add(delArr.size()+1);                                        //Tilføjer ekstra index på delArr for at undgå outOfBounds.
+        for (int fileCount = 0; fileCount < impArr.size() ; fileCount++) {  //laver nyt objekt for hver fil.
 
-            myName[fileCount] = new FileWrite(fileName, fileCount, lines);
+            myName[fileCount] = new FileWrite( fileCount, lines);
             myName[fileCount].makeFile(impArr.get(fileCount), delArr.get(fileCount+1), getFileName(fileCount), outputDir);
         }
     }
