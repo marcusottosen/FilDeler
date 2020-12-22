@@ -23,7 +23,7 @@ public class Controller{
          * EmpVacationTransfer har fejl
          *
          * Programmet tjekker ikke om den sidste indeksering er tom, da den løber tør for indexes. (EmpVacationTransfer)
-         * ^Den skriver slet ikke til den sidste fil - da programmet ikke ved til hvilken linje den skal skrive, men kun fra.
+         * ^Den skriver slet ikke til den sidste fil - da programmet ikke ved til hvilken linje den skal skrive til, men kun fra.
          *
          */
     }

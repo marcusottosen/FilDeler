@@ -59,7 +59,6 @@ public class GUI {
         runBut.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    //filename = "src/main/resources/test.txt";
                     Controller start = new Controller(filename, outputDir);
                     try {
                         start.run();    //Kører resten af programmet
